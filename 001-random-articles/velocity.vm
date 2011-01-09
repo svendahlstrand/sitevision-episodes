@@ -1,0 +1,6 @@
+<ul>
+  #foreach ($article in $articles)
+    $linkRenderer.update($article)
+    <li>$linkRenderer.render()</li>
+  #end
+</ul>
