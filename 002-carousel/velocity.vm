@@ -1,13 +1,15 @@
-<div id="slider">
-  #if ($folder)
+#if ($folder)
+  <div id="slider">
     #foreach ($image in $folder)
       $imageRenderer.update($image)
       $imageRenderer.render()
     #end
-  #end
-</div>
-<script type="text/javascript">
-  $(window).load(function() {
-    $('#slider').nivoSlider();
-  });
-</script>
+  </div>
+
+  <script type="text/javascript">
+    $(window).load(function() {
+      $('#slider').nivoSlider();
+    });
+  </script>
+#end
+
